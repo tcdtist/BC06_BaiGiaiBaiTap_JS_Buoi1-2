@@ -1,3 +1,10 @@
+.title {
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -55,6 +62,10 @@
   margin: 0;
 }
 
+.tab-content .tab-pane .card .card-body .card-text .form-group small {
+  color: #ffffffda !important;
+}
+
 .tab-content .tab-pane .card .card-body .card-text .form-group .form-control {
   width: 32%;
   margin-bottom: 0.625rem;
@@ -62,5 +73,9 @@
 
 .tab-content .tab-pane .card .card-body .card-text .form-group .form-control::placeholder {
   color: #000000;
+}
+
+.tab-content .tab-pane .card .card-body .card-text .form-group .form-control.output-ex {
+  width: 50% !important;
 }
 /*# sourceMappingURL=style.css.map */

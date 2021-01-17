@@ -12,15 +12,21 @@
                 }
                 .card-text {
                     margin-top: 2rem;
-                    .form-group{
-                        label{
+                    .form-group {
+                        label {
                             margin: 0;
                         }
-                        .form-control{
+                        small{
+                            color: #ffffffda !important;
+                        }
+                        .form-control {
                             width: 32%;
                             margin-bottom: 0.625rem;
-                            &::placeholder{
+                            &::placeholder {
                                 color: #000000;
+                            }
+                            &.output-ex {
+                                width: 50% !important;
                             }
                         }
                     }

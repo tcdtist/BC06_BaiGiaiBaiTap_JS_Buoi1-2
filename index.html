@@ -21,6 +21,9 @@
 
 <body class="bg-dark">
 
+    <!-- title -->
+    <h1 class="title">Bài tập JS Buổi 1 - Lớp BC06</h1>
+
     <!-- layout bài tập -->
     <section id="bai-tap" class="m-5 rounded">
         <div class="container bg-light p-3">
@@ -56,13 +59,12 @@
                                     <input type="text" disabled class="form-control"
                                         placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
                                     <label>Mời bạn nhập vào số ngày làm: </label>
-                                    <input type="text" class="form-control" name="" id="soNgayLam"
-                                        aria-describedby="helpId" placeholder="">
+                                    <input type="text" class="form-control" name="" id="soNgayLam" placeholder="">
                                     <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
                                         1000</small>
                                     <button type="submit" id="tinhEx1" class="btn btn-success my-2">Tính tiền</button>
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                    <input type="text" disabled class="form-control output-ex" placeholder="Kết quả: " id="kqEx1"
+                                        value="">
                                 </div>
                             </div>
                         </div>
@@ -74,18 +76,21 @@
                             <h4 class="card-title">Bài 2: Tính giá trị trung bình</h4>
                             <div class="card-text">
                                 <div class="form-group">
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Lương 1 ngày: 100,000 VNĐ">
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
-                                    <label>Mời bạn nhập vào số ngày làm: </label>
-                                    <input type="text" class="form-control" name="" id="soNgayLam"
-                                        aria-describedby="helpId" placeholder="">
-                                    <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
-                                        1000</small>
-                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                    <label>Mời bạn nhập số thực thứ nhất: </label>
+                                    <input type="text" class="form-control" name="" id="soThuc1" placeholder="">
+                                    <label>Mời bạn nhập số thực thứ hai: </label>
+                                    <input type="text" class="form-control" name="" id="soThuc2" placeholder="">
+                                    <label>Mời bạn nhập số thực thứ ba: </label>
+                                    <input type="text" class="form-control" name="" id="soThuc3" placeholder="">
+                                    <label>Mời bạn nhập số thực thứ tư: </label>
+                                    <input type="text" class="form-control" name="" id="soThuc4" placeholder="">
+                                    <label>Mời bạn nhập số thực thứ năm: </label>
+                                    <input type="text" class="form-control" name="" id="soThuc5" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">(*) Số thực cần >= 0 và dùng dấu "."</small>
+                                    <button type="submit" id="tinhEx2" class="btn btn-success my-2">Tính
+                                        giá trị</button>
+                                    <input type="text" disabled class="form-control output-ex" placeholder="Kết quả: " id="kqEx2"
+                                        value="">
                                 </div>
                             </div>
                         </div>
@@ -102,13 +107,13 @@
                                     <input type="text" disabled class="form-control"
                                         placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
                                     <label>Mời bạn nhập vào số ngày làm: </label>
-                                    <input type="text" class="form-control" name="" id="soNgayLam"
-                                        aria-describedby="helpId" placeholder="">
+                                    <input type="text" class="form-control" name="" id="soNgayLam" placeholder="">
                                     <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
                                         1000</small>
-                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính
+                                        tiền</button>
+                                    <input type="text" disabled class="form-control" placeholder="Kết quả: " id="kqEx1"
+                                        value="">
                                 </div>
                             </div>
                         </div>
@@ -125,13 +130,13 @@
                                     <input type="text" disabled class="form-control"
                                         placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
                                     <label>Mời bạn nhập vào số ngày làm: </label>
-                                    <input type="text" class="form-control" name="" id="soNgayLam"
-                                        aria-describedby="helpId" placeholder="">
+                                    <input type="text" class="form-control" name="" id="soNgayLam" placeholder="">
                                     <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
                                         1000</small>
-                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính
+                                        tiền</button>
+                                    <input type="text" disabled class="form-control" placeholder="Kết quả: " id="kqEx1"
+                                        value="">
                                 </div>
                             </div>
                         </div>
@@ -148,13 +153,13 @@
                                     <input type="text" disabled class="form-control"
                                         placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
                                     <label>Mời bạn nhập vào số ngày làm: </label>
-                                    <input type="text" class="form-control" name="" id="soNgayLam"
-                                        aria-describedby="helpId" placeholder="">
+                                    <input type="text" class="form-control" name="" id="soNgayLam" placeholder="">
                                     <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
                                         1000</small>
-                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
-                                    <input type="text" disabled class="form-control"
-                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính
+                                        tiền</button>
+                                    <input type="text" disabled class="form-control" placeholder="Kết quả: " id="kqEx1"
+                                        value="">
                                 </div>
                             </div>
                         </div>
@@ -185,8 +190,8 @@
         crossorigin="anonymous"></script>
 
     <!-- link js bài tập -->
-    <script src="./js_bai_tap/Ex1.js"></script>
-    <!-- <script src="./js_bai_tap/Ex2.js"></script> -->
+    <!-- <script src="./js_bai_tap/Ex1.js"></script> -->
+    <script src="./js_bai_tap/Ex2.js"></script>
     <!-- <script src="./js_bai_tap/Ex3.js"></script> -->
     <!-- <script src="./js_bai_tap/Ex4.js"></script> -->
     <!-- <script src="./js_bai_tap/Ex5.js"></script> -->
