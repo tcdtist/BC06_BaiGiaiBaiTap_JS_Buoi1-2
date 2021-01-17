@@ -36,7 +36,7 @@
 }
 
 .tab-content .tab-pane .card {
-  background-color: cadetblue !important;
+  background-color: cadetblue;
   border-color: darkblue;
 }
 
@@ -44,5 +44,23 @@
   display: inline;
   border-bottom: 0.0625rem solid #000000;
   padding-bottom: 0.3125rem;
+  margin-bottom: 2rem;
+}
+
+.tab-content .tab-pane .card .card-body .card-text {
+  margin-top: 2rem;
+}
+
+.tab-content .tab-pane .card .card-body .card-text .form-group label {
+  margin: 0;
+}
+
+.tab-content .tab-pane .card .card-body .card-text .form-group .form-control {
+  width: 32%;
+  margin-bottom: 0.625rem;
+}
+
+.tab-content .tab-pane .card .card-body .card-text .form-group .form-control::placeholder {
+  color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

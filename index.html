@@ -10,9 +10,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <!-- link font-awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 
     <!-- link css -->
     <link rel="stylesheet" href="./css/style.css">
@@ -46,53 +47,118 @@
             <div class="tab-content mt-5">
                 <div class="tab-pane container active" id="ex1">
                     <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">Bài 1: Tính tiền lương nhân viên</h4>
-                        <p class="card-text">
-
-                        </p>
-                      </div>
+                        <div class="card-body">
+                            <h4 class="card-title">Bài 1: Tính tiền lương nhân viên</h4>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Lương 1 ngày: 100,000 VNĐ">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
+                                    <label>Mời bạn nhập vào số ngày làm: </label>
+                                    <input type="text" class="form-control" name="" id="soNgayLam"
+                                        aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
+                                        1000</small>
+                                    <button type="submit" id="tinhEx1" class="btn btn-success my-2">Tính tiền</button>
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane container fade" id="ex2">
                     <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">Bài 2: Tính giá trị trung bình</h4>
-                          <p class="card-text">
-                              
-                          </p>
+                            <h4 class="card-title">Bài 2: Tính giá trị trung bình</h4>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Lương 1 ngày: 100,000 VNĐ">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
+                                    <label>Mời bạn nhập vào số ngày làm: </label>
+                                    <input type="text" class="form-control" name="" id="soNgayLam"
+                                        aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
+                                        1000</small>
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="tab-pane container fade" id="ex3">
                     <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">Bài 3: Quy đổi tiền</h4>
-                          <p class="card-text">
-                              
-                          </p>
+                            <h4 class="card-title">Bài 3: Quy đổi tiền</h4>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Lương 1 ngày: 100,000 VNĐ">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
+                                    <label>Mời bạn nhập vào số ngày làm: </label>
+                                    <input type="text" class="form-control" name="" id="soNgayLam"
+                                        aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
+                                        1000</small>
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="tab-pane container fade" id="ex4">
                     <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">Bài 4: Tính diện tích, chu vi hình chữ nhật</h4>
-                          <p class="card-text">
-                              
-                          </p>
+                            <h4 class="card-title">Bài 4: Tính diện tích, chu vi hình chữ nhật</h4>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Lương 1 ngày: 100,000 VNĐ">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
+                                    <label>Mời bạn nhập vào số ngày làm: </label>
+                                    <input type="text" class="form-control" name="" id="soNgayLam"
+                                        aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
+                                        1000</small>
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="tab-pane container fade" id="ex5">
                     <div class="card">
                         <div class="card-body">
-                          <h4 class="card-title">Bài 5: Tính tổng 2 ký số</h4>
-                          <p class="card-text">
-                              
-                          </p>
+                            <h4 class="card-title">Bài 5: Tính tổng 2 ký số</h4>
+                            <div class="card-text">
+                                <div class="form-group">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Lương 1 ngày: 100,000 VNĐ">
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
+                                    <label>Mời bạn nhập vào số ngày làm: </label>
+                                    <input type="text" class="form-control" name="" id="soNgayLam"
+                                        aria-describedby="helpId" placeholder="">
+                                    <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không quá
+                                        1000</small>
+                                    <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính tiền</button>
+                                    <input type="text" disabled class="form-control"
+                                        placeholder="Kết quả: " id="kqEx1" value="">
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,10 +186,10 @@
 
     <!-- link js bài tập -->
     <script src="./js_bai_tap/Ex1.js"></script>
-    <script src="./js_bai_tap/Ex2.js"></script>
-    <script src="./js_bai_tap/Ex3.js"></script>
-    <script src="./js_bai_tap/Ex4.js"></script>
-    <script src="./js_bai_tap/Ex5.js"></script>
+    <!-- <script src="./js_bai_tap/Ex2.js"></script> -->
+    <!-- <script src="./js_bai_tap/Ex3.js"></script> -->
+    <!-- <script src="./js_bai_tap/Ex4.js"></script> -->
+    <!-- <script src="./js_bai_tap/Ex5.js"></script> -->
 
 </body>
 

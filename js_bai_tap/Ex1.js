@@ -8,13 +8,22 @@
  * Đầu ra (output)
  * - xuất lương 
  */
+function getEle(id) {
+    return document.getElementById(id);
+}
 
-var luongMotNgay = 100000;
-var soNgayLam = 30;
 
-luongNhanVien = luongMotNgay * soNgayLam;
+getEle('tinhTienEx1').addEventListener('click', () => {
 
-var currentFormat = new Intl.NumberFormat("vn-VN");
-var tienFormat = currentFormat.format(luongNhanVien);
+    var luongMotNgay = 100_000;
+    var soNgayLam = getEle('soNgayLam').value;
 
-console.log("Lương của nhân viên là: " + tienFormat);
+    luongNhanVien = luongMotNgay * soNgayLam;
+
+    var currentFormat = new Intl.NumberFormat("vn-VN");
+    var moneyFormat = currentFormat.format(luongNhanVien);
+
+    console.log("Lương của nhân viên là: " + moneyFormat);
+
+    getEle('kqEx1').value = "Tổng tiền:      "+ moneyFormat + " VND";
+})
