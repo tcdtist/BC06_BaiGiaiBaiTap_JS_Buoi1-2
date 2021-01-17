@@ -67,7 +67,7 @@
 }
 
 .tab-content .tab-pane .card .card-body .card-text .form-group .form-control {
-  width: 32%;
+  width: 70%;
   margin-bottom: 0.625rem;
 }
 
@@ -76,6 +76,16 @@
 }
 
 .tab-content .tab-pane .card .card-body .card-text .form-group .form-control.output-ex {
-  width: 50% !important;
+  width: 80% !important;
+}
+
+.tab-content .tab-pane .card .images-ex {
+  padding: 1.25rem;
+}
+
+.tab-content .tab-pane .card .images-ex img {
+  display: block;
+  width: 100%;
+  height: cover;
 }
 /*# sourceMappingURL=style.css.map */

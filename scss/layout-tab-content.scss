@@ -16,20 +16,28 @@
                         label {
                             margin: 0;
                         }
-                        small{
+                        small {
                             color: #ffffffda !important;
                         }
                         .form-control {
-                            width: 32%;
+                            width: 70%;
                             margin-bottom: 0.625rem;
                             &::placeholder {
                                 color: #000000;
                             }
                             &.output-ex {
-                                width: 50% !important;
+                                width: 80% !important;
                             }
                         }
                     }
+                }
+            }
+            .images-ex {
+                padding: 1.25rem;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: cover;
                 }
             }
         }
