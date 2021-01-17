@@ -7,7 +7,7 @@
             .card-body {
                 .card-title {
                     display: inline;
-                    @include border-bottom;
+                    @include bd-bottom;
                     margin-bottom: 2rem;
                 }
                 .card-text {
@@ -34,10 +34,12 @@
             }
             .images-ex {
                 padding: 1.25rem;
+                padding-top: 4.5rem;
                 img {
                     display: block;
                     width: 100%;
                     height: cover;
+                    @include bd-radius;
                 }
             }
         }

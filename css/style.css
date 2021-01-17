@@ -12,7 +12,7 @@
 }
 
 #bai-tap .container {
-  border-radius: 0.25rem;
+  border-radius: 0.35rem;
 }
 
 #bai-tap .container .nav {
@@ -81,11 +81,13 @@
 
 .tab-content .tab-pane .card .images-ex {
   padding: 1.25rem;
+  padding-top: 4.5rem;
 }
 
 .tab-content .tab-pane .card .images-ex img {
   display: block;
   width: 100%;
   height: cover;
+  border-radius: 0.35rem;
 }
 /*# sourceMappingURL=style.css.map */
