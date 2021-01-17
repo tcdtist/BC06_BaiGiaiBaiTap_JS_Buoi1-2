@@ -1,0 +1,16 @@
+.tab-content {
+    .tab-pane {
+        padding: 0;
+        .card {
+            background-color: cadetblue;
+            border-color: darkblue;
+            .card-body {
+                .card-title {
+                    display: inline;
+                    @include border-bottom;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
+}

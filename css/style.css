@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+#bai-tap .container {
+  border-radius: 0.25rem;
+}
+
+#bai-tap .container .nav {
+  border-bottom: 0.0625rem solid #000000;
+  padding-bottom: 0.3125rem;
+}
+
+#bai-tap .container .nav .nav-link {
+  background-color: black;
+  margin-right: 0.625rem;
+  color: #ffffff;
+  width: 6.25rem;
+  text-align: center;
+}
+
+#bai-tap .container .nav .nav-link:hover {
+  color: yellow;
+}
+
+#bai-tap .container .nav .nav-link.active {
+  background-color: yellow !important;
+  color: black !important;
+  font-weight: 500;
+}
+
+.tab-content .tab-pane {
+  padding: 0;
+}
+
+.tab-content .tab-pane .card {
+  background-color: cadetblue !important;
+  border-color: darkblue;
+}
+
+.tab-content .tab-pane .card .card-body .card-title {
+  display: inline;
+  border-bottom: 0.0625rem solid #000000;
+  padding-bottom: 0.3125rem;
+}
+/*# sourceMappingURL=style.css.map */
