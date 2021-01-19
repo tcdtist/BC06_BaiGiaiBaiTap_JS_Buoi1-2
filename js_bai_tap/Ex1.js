@@ -13,7 +13,7 @@ function getEle(id) {
 }
 
 
-getEle('tinhTienEx1').addEventListener('click', () => {
+getEle('tinhEx1').addEventListener('click', () => {
 
     var luongMotNgay = 100_000;
     var soNgayLam = getEle('soNgayLam').value;
@@ -25,5 +25,5 @@ getEle('tinhTienEx1').addEventListener('click', () => {
 
     console.log("Lương của nhân viên là: " + moneyFormat);
 
-    getEle('kqEx1').value = "Tổng tiền:      "+ moneyFormat + " VND";
+    getEle('kqEx1').value = "Tổng tiền:      " + moneyFormat + " VND";
 })
