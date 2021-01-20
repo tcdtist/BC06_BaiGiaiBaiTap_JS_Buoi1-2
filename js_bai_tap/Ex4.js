@@ -43,7 +43,7 @@ getEle('tinhEx4_dt').addEventListener('click', () => {
     var dienTich = 0;
 
     var isValid = true;
-    isValid &= validation.kiemTraEx1(soNgayLam, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx1");
+    isValid &= validation.kiemTraEx4(chieuDai, chieuRong, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx4");
     if (!isValid) return isValid;
 
     dienTich = chieuDai * chieuRong;
