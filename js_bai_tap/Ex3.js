@@ -20,7 +20,7 @@ getEle('tinhEx3').addEventListener('click', () => {
     var soTienCanDoi = parseFloat(getEle("soTienCanDoi").value);
 
     var isValid = true;
-    isValid &= validation.kiemTraEx1(soNgayLam, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx1");
+    isValid &= validation.kiemTraEx3(soTienCanDoi, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx3");
     if (!isValid) return isValid;
 
     tienVNĐ = soTienCanDoi * giaUSD;
