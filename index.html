@@ -66,9 +66,9 @@
                                         <label>Mời bạn nhập vào số ngày làm: </label>
                                         <input type="text" class="form-control money" value="" name="" id="soNgayLam"
                                             placeholder="">
-                                        <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không
+                                        <div id="txtThongBaoEx1" class="form-text text-muted">(*) Số ngày làm cần > 0 và không
                                             quá
-                                            1000</small>
+                                            1000</div>
                                         <button type="submit" id="tinhEx1" class="btn btn-success my-2">Tính
                                             tiền</button>
                                         <input type="text" disabled class="form-control output-ex"
@@ -101,8 +101,8 @@
                                         <label>Mời bạn nhập số thực thứ năm: </label>
                                         <input type="text" class="form-control money" value="" name="" id="soThuc5"
                                             placeholder="">
-                                        <small id="helpId" class="form-text text-muted">(*) Số thực cần >= 0 và dùng dấu
-                                            "."</small>
+                                        <div id="txtThongBaoEx2" class="form-text text-muted">(*) Số thực cần >= 0 và dùng dấu
+                                            "."</div>
                                         <button type="submit" id="tinhEx2" class="btn btn-success my-2">Tính
                                             giá trị</button>
                                         <input type="text" disabled class="form-control output-ex "
@@ -124,19 +124,17 @@
                                 <div class="card-text">
                                     <div class="form-group">
                                         <input type="text" disabled class="form-control"
-                                            placeholder="Lương 1 ngày: 100,000 VNĐ">
-                                        <input type="text" disabled class="form-control"
-                                            placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
-                                        <label>Mời bạn nhập vào số ngày làm: </label>
-                                        <input type="text" class="form-control money" name="" id="soNgayLam" value=""
+                                            placeholder="Giá USD hiện nay: 23.500 VNĐ">
+                                        <label>Mời bạn nhập vào số tiền cần đổi: </label>
+                                        <input type="text" class="form-control money" name="" id="soTienCanDoi" value=""
                                             placeholder="">
-                                        <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không
-                                            quá
-                                            1000</small>
-                                        <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính
+                                        <div id="txtThongBaoEx3" class="form-text text-muted">(*) Số tiền làm cần > 0 và không
+                                            chứa ký tự đặc biệt
+                                        </div>
+                                        <button type="submit" id="tinhEx3" class="btn btn-success my-2">Đổi
                                             tiền</button>
                                         <input type="text" disabled class="form-control" placeholder="Kết quả: "
-                                            id="kqEx1" value="">
+                                            id="kqEx3" value="">
                                     </div>
                                 </div>
                             </div>
@@ -153,20 +151,20 @@
                                 <h4 class="card-title">Bài 4: Tính diện tích, chu vi hình chữ nhật</h4>
                                 <div class="card-text">
                                     <div class="form-group">
-                                        <input type="text" disabled class="form-control"
-                                            placeholder="Lương 1 ngày: 100,000 VNĐ">
-                                        <input type="text" disabled class="form-control"
-                                            placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
-                                        <label>Mời bạn nhập vào số ngày làm: </label>
-                                        <input type="text" class="form-control money" value="" name="" id="soNgayLam"
+                                        <label>Mời bạn nhập chiều dài: </label>
+                                        <input type="text" class="form-control" value="" name="" id="chieuDai"
                                             placeholder="">
-                                        <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không
-                                            quá
-                                            1000</small>
-                                        <button type="submit" id="tinhEx1" class="btn btn-success my-2">Tính
-                                            tiền</button>
+                                        <label>Mời bạn nhập chiều rộng: </label>
+                                        <input type="text" class="form-control" value="" name="" id="chieuRong"
+                                            placeholder="">
+                                        <div id="txtThongBaoEx4" class="form-text text-muted">(*) Chiều dài cần > chiều rộng
+                                            và cả 2 phải là số</div>
+                                        <button type="submit" id="tinhEx4_cv" class="btn btn-success my-2 mr-2">Tính
+                                            chu vi</button>
+                                        <button type="submit" id="tinhEx4_dt" class="btn btn-primary my-2">Tính
+                                            diện tích</button>
                                         <input type="text" disabled class="form-control " placeholder="Kết quả: "
-                                            id="kqEx1" value="">
+                                            id="kqEx4" value="">
                                     </div>
                                 </div>
                             </div>
@@ -183,20 +181,14 @@
                                 <h4 class="card-title">Bài 5: Tính tổng 2 ký số</h4>
                                 <div class="card-text">
                                     <div class="form-group">
-                                        <input type="text" disabled class="form-control"
-                                            placeholder="Lương 1 ngày: 100,000 VNĐ">
-                                        <input type="text" disabled class="form-control"
-                                            placeholder="Công thức tính lương = số ngày làm * lương 1 ngày">
-                                        <label>Mời bạn nhập vào số ngày làm: </label>
-                                        <input type="text" class="form-control money" value="" name="" id="soNgayLam"
+                                        <label>Mời bạn nhập vào 1 số có hai chữ số: </label>
+                                        <input type="text" class="form-control" value="" name="" id="soNhap"
                                             placeholder="">
-                                        <small id="helpId" class="form-text text-muted">(*) Số ngày làm cần > 0 và không
-                                            quá
-                                            1000</small>
-                                        <button type="submit" id="tinhTienEx1" class="btn btn-success my-2">Tính
-                                            tiền</button>
+                                        <div id="txtThongBaoEx5" class="form-text text-muted">(*) Số nhập phải là số có hai chữ số.</div>
+                                        <button type="submit" id="tinhEx5" class="btn btn-success my-2">Tính
+                                            tổng</button>
                                         <input type="text" disabled class="form-control" placeholder="Kết quả: "
-                                            id="kqEx1" value="">
+                                            id="kqEx5" value="">
                                     </div>
                                 </div>
                             </div>
@@ -238,11 +230,12 @@
     <!-- DÙNG PHẢI XÓA DẤU "," TRƯỚC KHI TÍNH => RẮC RỐI -->
 
     <!-- link js bài tập -->
+    <script src="./js_bai_tap/validation.js"></script>
     <script src="./js_bai_tap/Ex1.js"></script>
-    <!-- <script src="./js_bai_tap/Ex2.js"></script> -->
-    <!-- <script src="./js_bai_tap/Ex3.js"></script> -->
-    <!-- <script src="./js_bai_tap/Ex4.js"></script> -->
-    <!-- <script src="./js_bai_tap/Ex5.js"></script> -->
+    <script src="./js_bai_tap/Ex2.js"></script>
+    <script src="./js_bai_tap/Ex3.js"></script>
+    <script src="./js_bai_tap/Ex4.js"></script>
+    <script src="./js_bai_tap/Ex5.js"></script>
 
 </body>
 

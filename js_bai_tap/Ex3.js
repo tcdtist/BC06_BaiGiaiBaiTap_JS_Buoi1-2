@@ -8,12 +8,28 @@
  *  - xuất tiền sau khi đổi
  */
 
-var giaUSD = 23500;
-var soTien = 5;
+function getEle(id) {
+    return document.getElementById(id);
+}
 
-tienViet = soTien * giaUSD;
+var validation = new Validation();
 
-currentFormat = new Intl.NumberFormat("vn-VN");
-tienFormat = currentFormat.format(tienViet);
+getEle('tinhEx3').addEventListener('click', () => {
 
-console.log("Tiền sau khi đổi là: " +  tienFormat + " VND");
+    var giaUSD = 23_500;
+    var soTienCanDoi = parseFloat(getEle("soTienCanDoi").value);
+
+    var isValid = true;
+    isValid &= validation.kiemTraEx1(soNgayLam, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx1");
+    if (!isValid) return isValid;
+
+    tienVNĐ = soTienCanDoi * giaUSD;
+
+    currentFormat = new Intl.NumberFormat("vn-VN");
+
+    var kqEx3 = "Tiền sau khi đổi là: " + currentFormat.format(tienVNĐ) + " VND"
+
+    console.log("Tiền sau khi đổi là:     " + currentFormat.format(tienVNĐ) + " VND");
+
+    getEle('kqEx3').value = kqEx3;
+});

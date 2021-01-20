@@ -20,21 +20,28 @@
  *  - Xuất tổng 2 ký số 
  */
 
-var so_1 = 12;
-var so_2 = 44;
-var soHangChuc_1 = 0;
-var soHangChuc_2 = 0;
-var soHangDonVi_1 = 0;
-var soHangDonVi_2 = 0;
-var tongHaiSo_1 = 0;
-var tongHaiSo_2 = 0;
+function getEle(id) {
+    return document.getElementById(id);
+}
 
-soHangChuc_1 = Math.floor(so_1 / 10)
-soHangDonVi_1 = Math.floor(so_1 % 10)
-tongHaiSo_1 = soHangChuc_1 + soHangDonVi_1
-soHangChuc_2 = Math.floor(so_2 / 10)
-soHangDonVi_2 = Math.floor(so_2 % 10)
-tongHaiSo_2 = soHangChuc_2 + soHangDonVi_2
+var validation = new Validation();
 
-console.log("Tổng 2 ký số thứ nhất là: " + tongHaiSo_1);
-console.log("Tổng 2 ký số thứ hai là: " + tongHaiSo_2);
+getEle('tinhEx5').addEventListener('click', () => {
+
+    var soNhap = parseFloat(getEle("soNhap").value);
+
+    var isValid = true;
+    isValid &= validation.kiemTraEx1(soNgayLam, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx1");
+    if (!isValid) return isValid;
+
+    soHangChuc = Math.floor(soNhap / 10)
+    soHangDonVi = Math.floor(soNhap % 10)
+
+    var tongHaiSo = soHangChuc + soHangDonVi;
+
+    console.log("Tổng 2 ký số là: " + tongHaiSo);
+
+    var kqEx5 = "Tổng 2 ký số là:     " + tongHaiSo;
+
+    getEle('kqEx5').value = kqEx5;
+});

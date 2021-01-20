@@ -1,3 +1,10 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
 .title {
   text-align: center;
   color: #ffffff;
@@ -5,10 +12,8 @@
   margin-top: 2rem;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
+.thong-bao {
+  color: red !important;
 }
 
 #bai-tap .container {
