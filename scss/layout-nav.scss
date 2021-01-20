@@ -1,15 +1,10 @@
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
 #bai-tap {
     .container {
-        border-radius: 0.25rem;
+        @include bd-radius;
         .nav {
             // border-bottom: 0.0625rem solid #000000;
             // padding-bottom: 0.3125rem;
-            @include border-bottom;
+            @include bd-bottom;
             .nav-link {
                 background-color: black;
                 margin-right: 0.625rem;
