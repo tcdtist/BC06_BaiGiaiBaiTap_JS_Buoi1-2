@@ -30,10 +30,6 @@ getEle('tinhEx5').addEventListener('click', () => {
 
     var soNhap = parseFloat(getEle("soNhap").value);
 
-    var isValid = true;
-    isValid &= validation.kiemTraEx5(soNhap, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx5");
-    if (!isValid) return isValid;
-
     soHangChuc = Math.floor(soNhap / 10)
     soHangDonVi = Math.floor(soNhap % 10)
 

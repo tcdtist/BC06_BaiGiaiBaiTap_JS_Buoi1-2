@@ -42,8 +42,8 @@ getEle('tinhEx2').addEventListener('click', () => {
 
     console.log("Trung bình 5 số là: " + giaTriTB);
 
-    var kqEx2 = "Giá trị trung bình của 5 số:     (" + soThuc_1 + " + " + soThuc_2 + " + " + soThuc_3 + " + " + soThuc_4 + " + " + soThuc_5 + ") / 5 = " + giaTriTB;
+    var kqEx2 = " Giá trị trung bình của 5 số:     (" + soThuc_1 + " + " + soThuc_2 + " + " + soThuc_3 + " + " + soThuc_4 + " + " + soThuc_5 + ") / 5 = " + giaTriTB;
 
-    getEle('kqEx2').value = kqEx2;
+    getEle('kqEx2').innerHTML = kqEx2;
 
 });

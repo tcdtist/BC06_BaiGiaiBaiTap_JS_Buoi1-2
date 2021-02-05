@@ -23,10 +23,6 @@ getEle('tinhEx4_cv').addEventListener('click', () => {
     var chieuRong = parseFloat(getEle("chieuRong").value);
     var chuVi = 0;
 
-    var isValid = true;
-    isValid &= validation.kiemTraEx1(soNgayLam, 0, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx1");
-    if (!isValid) return isValid;
-
     chuVi = (chieuDai + chieuRong) * 2;
 
     console.log("Chu vi hình chữ nhật là: " + chuVi);
