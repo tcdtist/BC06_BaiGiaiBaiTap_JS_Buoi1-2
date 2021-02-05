@@ -15,38 +15,44 @@ function getEle(id) {
     return document.getElementById(id);
 }
 
-var validation = new Validation();
-
 getEle('tinhEx4_cv').addEventListener('click', () => {
 
+    //Đầu vào
     var chieuDai = parseFloat(getEle("chieuDai").value);
     var chieuRong = parseFloat(getEle("chieuRong").value);
     var chuVi = 0;
 
+    //Xét điều kiện
+    if (chieuDai <= 0 || chieuRong <= 0) return alert('Chiều dài hoặc chiều rộng cần lớn hơn 0');
+    if (chieuDai <= chieuRong) return alert('Chiều dài cần dài hơn chiều rộng.');
+
+    //Xử lý
     chuVi = (chieuDai + chieuRong) * 2;
 
-    console.log("Chu vi hình chữ nhật là: " + chuVi);
-
+    //Đầu ra
     var kqEx4_cv = "Chu vi hình chữ nhật là:     " + chuVi;
-
-    getEle('kqEx4').value = kqEx4_cv;
+    console.log(kqEx4_cv);
+    getEle('kqEx4').style.display = "block";
+    getEle('kqEx4').innerHTML = kqEx4_cv;
 });
 
 getEle('tinhEx4_dt').addEventListener('click', () => {
 
+    //Đầu vào
     var chieuDai = parseFloat(getEle("chieuDai").value);
     var chieuRong = parseFloat(getEle("chieuRong").value);
     var dienTich = 0;
 
-    var isValid = true;
-    isValid &= validation.kiemTraEx4(chieuDai, chieuRong, 1000, "(*) Số nhập không nằm trong khoảng cho phép.", "txtThongBaoEx4");
-    if (!isValid) return isValid;
+    //Xét điều kiện
+    if (chieuDai <= 0 || chieuRong <= 0) return alert('Chiều dài hoặc chiều rộng cần lớn hơn 0');
+    if (chieuDai < chieuRong) return alert('Chiều dài cần dài hơn chiều rộng.');
 
+    //Xử lý
     dienTich = chieuDai * chieuRong;
 
-    console.log("Diện tích hình chữ nhật là: " + dienTich);
-
+    //Đầu ra
     var kqEx4_dt = "Diện tích hình chữ nhật là:     " + dienTich;
-
-    getEle('kqEx4').value = kqEx4_dt;
+    console.log(kqEx4_dt);
+    getEle('kqEx4').style.display = "block";
+    getEle('kqEx4').innerHTML = kqEx4_dt;
 });

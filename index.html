@@ -8,12 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- font chữ -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> -->
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- link font-awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
@@ -72,8 +71,8 @@
                                             1000</div>
                                         <button type="submit" id="tinhEx1" class="btn btn-success my-2">Tính
                                             tiền</button>
-                                        <input type="text" disabled class="form-control output-ex"
-                                            placeholder="Kết quả: " id="kqEx1" value="">
+                                        <div id="kqEx1" class="bg-white p-2" style="border-radius: 3px; display: none;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -108,7 +107,8 @@
                                             "."</div>
                                         <button type="submit" id="tinhEx2" class="btn btn-success my-2">Tính
                                             giá trị</button>
-                                        <div class="bg-white" style="border-radius: 5px" id="kqEx2"></div>
+                                        <div id="kqEx2" class="bg-white p-2" style="border-radius: 3px; display: none;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -136,8 +136,8 @@
                                         </div>
                                         <button type="submit" id="tinhEx3" class="btn btn-success my-2">Đổi
                                             tiền</button>
-                                        <input type="text" disabled class="form-control" placeholder="Kết quả: "
-                                            id="kqEx3" value="">
+                                        <div id="kqEx3" class="bg-white p-2" style="border-radius: 3px; display: none;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -167,8 +167,8 @@
                                             chu vi</button>
                                         <button type="submit" id="tinhEx4_dt" class="btn btn-primary my-2">Tính
                                             diện tích</button>
-                                        <input type="text" disabled class="form-control " placeholder="Kết quả: "
-                                            id="kqEx4" value="">
+                                        <div id="kqEx4" class="bg-white p-2" style="border-radius: 3px; display: none;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -186,15 +186,15 @@
                                 <div class="card-text">
                                     <div class="form-group">
                                         <label>Mời bạn nhập vào 1 số có hai chữ số: </label>
-                                        <input type="text" class="form-control" value="" name="" id="soNhap"
+                                        <input type="text" class="form-control" value="" name="" id="soNhap_5"
                                             placeholder="">
                                         <div id="txtThongBaoEx5" class="form-text text-muted">(*) Số nhập phải là số có
                                             hai
                                             chữ số.</div>
                                         <button type="submit" id="tinhEx5" class="btn btn-success my-2">Tính
                                             tổng</button>
-                                        <input type="text" disabled class="form-control" placeholder="Kết quả: "
-                                            id="kqEx5" value="">
+                                        <div id="kqEx5" class="bg-white p-2" style="border-radius: 3px; display: none;">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -219,15 +219,9 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 
     <!-- link format money -->
     <!-- <script src="./js/simple.money.format.js"></script> -->
@@ -237,7 +231,6 @@
     <!-- DÙNG PHẢI XÓA DẤU "," TRƯỚC KHI TÍNH => RẮC RỐI -->
 
     <!-- link js bài tập -->
-    <script src="./js_bai_tap/validation.js"></script>
     <script src="./js_bai_tap/Ex1.js"></script>
     <script src="./js_bai_tap/Ex2.js"></script>
     <script src="./js_bai_tap/Ex3.js"></script>

@@ -24,20 +24,26 @@ function getEle(id) {
     return document.getElementById(id);
 }
 
-var validation = new Validation();
-
 getEle('tinhEx5').addEventListener('click', () => {
 
-    var soNhap = parseFloat(getEle("soNhap").value);
+    //Đầu vào
+    var soHangChuc, soHangDonVi;
+    var soNhap = parseInt(getEle("soNhap_5").value);
 
+    //Kiểm tra điều kiện
+    if (soNhap < 10 || soNhap > 99) return alert('Số nhập cần là số có 2 chữ số.')
+
+    //Tách lấy hàng chục và hàng dv
     soHangChuc = Math.floor(soNhap / 10)
     soHangDonVi = Math.floor(soNhap % 10)
 
+    //Xử lý
     var tongHaiSo = soHangChuc + soHangDonVi;
 
-    console.log("Tổng 2 ký số là: " + tongHaiSo);
-
+    //Đầu ra
     var kqEx5 = "Tổng 2 ký số là:     " + tongHaiSo;
+    console.log(kqEx5);
+    getEle('kqEx5').style.display = "block";
+    getEle('kqEx5').innerHTML = kqEx5;
 
-    getEle('kqEx5').value = kqEx5;
 });
